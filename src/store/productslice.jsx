@@ -1,4 +1,3 @@
-import items from "../storageProducts/storageProducts.json";
 const { createSlice } = require("@reduxjs/toolkit");
 
 const productslice = createSlice({
