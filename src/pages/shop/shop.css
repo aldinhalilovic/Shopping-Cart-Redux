@@ -1,0 +1,9 @@
+.main {
+    width: 75%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+/* .main::-webkit-scrollbar{
+    display: none;
+} */

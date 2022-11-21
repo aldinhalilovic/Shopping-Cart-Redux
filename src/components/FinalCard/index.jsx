@@ -244,7 +244,7 @@ function FinalCard({ el }) {
           }}
         >
           <h3>Starting price : {Number(el.price).toLocaleString()}€</h3>
-          <h3>{finalPrice.toLocaleString()}€</h3>
+          <h3>Final price is : {finalPrice.toLocaleString()}€</h3>
         </div>
       </div>
     </div>

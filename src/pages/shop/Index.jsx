@@ -1,13 +1,11 @@
-import { Button } from "@mantine/core";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { Itemcard } from "../../components/Itemcard";
 import { productAction } from "../../store/productslice";
 import items from "../../storageProducts/storageProducts.json";
+import "./shop.css";
 
 function Shop() {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const addingToCart = (el) => dispatch(productAction.addToCart(el));
   const removingFromCart = (el) => dispatch(productAction.removeFromCart(el));
@@ -15,24 +13,17 @@ function Shop() {
     <div
       style={{
         width: "100%",
-        minHeight: "70%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
       }}
     >
-      <div
-        style={{
-          width: "90%",
-          display: "flex",
-          overflowY: "auto",
-        }}
-      >
+      <div className="main">
         {items.map((el) => (
           <div
             style={{
-              marginLeft: "30px",
+              margin: "30px",
             }}
             key={el.id}
           >
@@ -44,7 +35,6 @@ function Shop() {
           </div>
         ))}
       </div>
-      <Button onClick={() => navigate("/cart")}>GO to cart</Button>
     </div>
   );
 }

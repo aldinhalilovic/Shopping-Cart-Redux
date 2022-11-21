@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   const anchor = {
-    color: "black",
+    color: "#1C7ED6",
   };
   return (
     <div
@@ -13,7 +13,8 @@ function Footer() {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        borderTop: "2px solid black",
+        borderTop: "2px solid #F58216",
+        color: "#F58216",
       }}
     >
       <h3>aldinhalilovic@gmail.com</h3>

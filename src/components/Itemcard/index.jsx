@@ -7,7 +7,6 @@ import {
   createStyles,
   Center,
   Button,
-  Checkbox,
 } from "@mantine/core";
 import { useSelector } from "react-redux";
 
@@ -61,7 +60,6 @@ export function Itemcard({ el, addProduct, removeProduct, addTyres }) {
     <div
       style={{
         width: "300px",
-        marginBottom: "10px",
       }}
     >
       <Card withBorder radius="md" className={classes.card}>
@@ -134,11 +132,11 @@ export function Itemcard({ el, addProduct, removeProduct, addTyres }) {
               >
                 {!cartItems.find((item) => item.id === el.id) ? (
                   <Button onClick={addProduct} mt={10}>
-                    Add to cart
+                    Add to favourites
                   </Button>
                 ) : (
                   <Button onClick={removeProduct} mt={10}>
-                    Remove from cart
+                    Remove from favourites
                   </Button>
                 )}
               </div>

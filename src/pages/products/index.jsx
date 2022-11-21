@@ -5,8 +5,16 @@ import FinalCard from "../../components/FinalCard";
 function Products() {
   const finalProducts = useSelector((state) => state.products.products);
   return (
-    <div>
-      <div>Final finishes.</div>
+    <div
+      style={{
+        width: "100%",
+        minHeight: "80vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "20px 0",
+      }}
+    >
       <div
         style={{
           display: "flex",
